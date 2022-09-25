@@ -1,38 +1,53 @@
+
 .App {
-  text-align: center;
+  height: 100vh;
+  background-image: url(./bg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {  
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cont {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+li {
+  cursor: pointer;
+}
+.crossed {
+  text-decoration: line-through 2px #3d5535;
+  background-color: #acbe9c;
+}
+ul, li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  }
+input {
+  border: solid 3px #3d5535;
+  width: 100%;
+  font-family: 'Overpass', sans-serif;
+  padding: 8px;
+  margin: 10px;
+  font-size: 16px;
+}
+.btn {
+  font-family: 'Overpass', sans-serif;
+  padding: 5px;
+  border: none;
+  width: 80%;
   color: white;
+  font-size: 16px;
 }
-
-.App-link {
-  color: #61dafb;
+.add {
+  background: #56602d;
+  margin-top: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete {
+  background: #e2921c;
+  margin-bottom: 5px;
 }
